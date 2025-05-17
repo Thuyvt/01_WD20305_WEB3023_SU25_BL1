@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'Due';
+            src: url('font/UTM\ Duepuntozero.ttf');
+            font-weight: normal;
+        }
+        @font-face {
+            font-family: 'DueBold';
+            src: url('font/UTM\ DuepuntozeroBold.ttf');
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h3>#1. Giới thiệu về thẻ mới của html5</h3>
+    <p>Sử dựng để các search engine hiểu và tốt cho SEO</p>
+    <ul>
+        <li>Thẻ header | đánh dấu khu vực header của web</li>
+        <li>Thẻ nav | đánh dấu khu vực menu điều hướng</li>
+        <li>Thẻ section | đánh dấu khu vực tính năng của website</li>
+        <li>Thẻ article | đánh dấu khu vực bài viết</li>
+        <li>Thẻ footer | đánh dấu khu vực footer web</li>
+        <li>Thẻ figure | đánh dấu khu vực thumnail bài viết, sản phẩm(ảnh, mô tả ngắn ...)</li>
+    </ul>
+    <h3>#2. Giới thiệu về các lệnh css3 mới hay sử dụng</h3>
+    <h4>2.1 Nhúng font chữ mới</h4>
+    <p>Sử dụng @font-face</p>
+    <ul>
+        <li style="font-family: 'Due';"> Sử dụng font 'UTM Due'</li>
+        <li style="font-family: 'DueBold';"> Sử dụng font 'UTM DueBold'</li>
+    </ul>
+    <hr>
+    <h4>2.2 Sử dụng display:flex;</h4>
+    <div>
+        <p>2.2.1 Khai báo 1 vài div làm demo</p>
+        <div style="background-color: gray;">
+            <div style="background-color: red;">
+                <div>Box 1.1</div>
+            </div>
+            <div style="background-color: green;">
+                <div>Box 2.1</div>
+                <div>Box 2.2</div>
+            </div>
+            <div style="background-color: orange;">
+                <div>Box 3.1</div>
+                <div>Box 3.2</div>
+                <div>Box 3.3</div>
+            </div>
+        </div>
+
+        <p>2.2.2 Sử dụng display:flex, giúp đưa phần tử con trực tiếp lên cùng một hàng </p>
+        <div style="background-color: gray; display: flex;">
+            <div style="background-color: red;">
+                <div>Box 1.1</div>
+            </div>
+            <div style="background-color: green;">
+                <div>Box 2.1</div>
+                <div>Box 2.2</div>
+            </div>
+            <div style="background-color: orange;">
+                <div>Box 3.1</div>
+                <div>Box 3.2</div>
+                <div>Box 3.3</div>
+            </div>
+        </div>
+
+        <p>2.2.3 Sử dụng display:flex và align-items 
+            (căn chình thành phần con theo chiều trên dưới: start, end, center, stretch) </p>
+        <div style="background-color: gray; display: flex; align-items: center;">
+            <div style="background-color: red;">
+                <div>Box 1.1</div>
+            </div>
+            <div style="background-color: green;">
+                <div>Box 2.1</div>
+                <div>Box 2.2</div>
+            </div>
+            <div style="background-color: orange;">
+                <div>Box 3.1</div>
+                <div>Box 3.2</div>
+                <div>Box 3.3</div>
+            </div>
+        </div>
+
+         <p>2.2.4 Sử dụng display:flex và justify-content 
+            (căn chình thành phần con theo chiều trái phải: 
+            start, end, center, space-between, space-around, space-evently) </p>
+        <div style="background-color: gray; display: flex; justify-content: space-evenly;">
+            <div style="background-color: red;">
+                <div>Box 1.1</div>
+            </div>
+            <div style="background-color: green;">
+                <div>Box 2.1</div>
+                <div>Box 2.2</div>
+            </div>
+            <div style="background-color: orange;">
+                <div>Box 3.1</div>
+                <div>Box 3.2</div>
+                <div>Box 3.3</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
