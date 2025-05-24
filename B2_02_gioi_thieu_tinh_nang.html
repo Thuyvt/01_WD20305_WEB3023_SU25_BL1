@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .vd1 {
+            &:hover {
+                /* phóng to đối tượng */
+                transform: scale(2);
+                /* thu nhỏ đối tượng */
+                /* transform: scale(-2); */
+            }
+            /* Thời gian hiệu ứng diễn ra */
+            transition-duration: 3s;
+        }
+
+        .vd2 {    
+            &:hover {
+                /* Xoay 360 độ */
+                transform: rotate(360deg);
+            }
+            /* Thời gian hiệu ứng diễn ra */
+            transition-duration: 3s;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS Transition</h3>
+    <p>transform: scale(): phóng to, thu thỏ đối tượng</p>
+    <p>transform: rotate(): xoay các dối tượng</p>
+    <p>transition-duration: quy định thời gian diễn ra hiệu ứng</p>
+    <p>Sử dụng 3 thuộc tính này khi hover vào đối tương</p>
+    
+    <h4>Khai báo thẻ cần thiết và css</h4>
+    <h2>1.1 Hiệu ứng phóng to đối tượng transform: scale()</h2>
+    <div class="vd1" style="height: 100px; width: 100px; background-color: red;"> 
+        Phóng to
+    </div>
+    <h2>1.2 Hiệu hứng xoay vòng transform: rotate()</h2>
+    <div class="vd2" style="height: 100px; width: 100px; background-color: red;">
+        Xoay vòng
+    </div>
+</body>
+</html>
