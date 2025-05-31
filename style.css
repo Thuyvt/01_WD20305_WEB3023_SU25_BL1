@@ -83,3 +83,84 @@ header {
         }
     }
 }
+
+/* Cấu hình nội dung chính */
+main {
+    .khu-vuc-banner {
+        margin-top: 10px;
+    }
+    .khu-vuc-tin-tuc {
+        .tieu-de {
+            color: #F95412;
+            font-size: xx-large;
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .danh-sach-tin-tuc {
+            /* để phần tử con trực tiếp lleen cùng 1 hàng */
+            display: flex;
+            /* để các phần tử con có chiều cao bằng nhau */
+            align-items: stretch;
+            margin-top: 10px;
+        }
+        .tin-tuc {
+            width: calc((100% - 30px - 30px)/3);
+            margin-right: 30px;
+            border: 1px solid #F95412;
+            padding: 15px 25px;
+            /* Bỏ margin-right của tin-tuc cuối cùng */
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                color: #F95412;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                h1 {
+                    font-size: large;
+                }
+                
+            }
+            .khu-vuc-img {
+                img {
+                    /* transition-duration: 2s; */
+                    &:hover {
+                        animation: moveing 3s infinite;
+                    }
+                }
+            }
+            .khu-vuc-img2 {
+                /* ẩn nội dung khi hover bị tràn ra ngoài */
+                overflow: hidden;
+                img {
+                    transition-duration: 2s;
+                    &:hover {
+                        /* phóng to ảnh */
+                        transform: scale(1.5);
+                    }
+                }
+            }
+            .khu-vuc-img3 {
+                overflow: hidden;
+                img {
+                    transition-duration: 2s;
+                    &:hover {
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Chuyển động đơn giản 2 trạng thái từ dưới lên trên */
+@keyframes moveing {
+    from {top: 50px;}
+    to {top: 0px;}
+}
