@@ -131,6 +131,8 @@ main {
                 img {
                     /* transition-duration: 2s; */
                     &:hover {
+                        /* Với animation phải thêm position: relative;*/
+                        position: relative;
                         animation: moveing 3s infinite;
                     }
                 }
@@ -155,6 +157,21 @@ main {
                     }
                 }
             }
+            /* tốc độ diễn ra hiệu ứng
+                easy: mặc định, bắt đầu và kết thức chậm, ở giữa nhanh
+                linear: tốc độ không đổi
+                ease-in: bắt đầu chậm
+                ease-out: kết thúc chậm
+                ease-in-out: bắt đầu và kết thúc chậm, ở giữa bình thường
+            */
+            .khu-vuc-img4 {
+              img {
+                &:hover {
+                    position: relative;
+                    animation: moveing2 5s ease-in;
+                }
+              }
+            }
         }
     }
 }
@@ -163,4 +180,13 @@ main {
 @keyframes moveing {
     from {top: 50px;}
     to {top: 0px;}
+}
+
+/* Chuyển động phức tạp theo trạng thái tiến trình */
+@keyframes moveing2 {
+    0% {left: 50px;}
+    25% {left: 40px; border: 2px solid green;}
+    50% {left: 20px; border: 2px solid red;}
+    75% {left: 10px; border: 2px solid black;}
+    100% {left: 0;}
 }
